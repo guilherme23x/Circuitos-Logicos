@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cards.css" />
+  </head>
+  <body>
+    <main id="container">
+      <h2>Símbolos</h2>
+      <a href="../index.html">Voltar</a>
+      <section>
+        <div class="card">
+          <div class="front">
+            <img src="../img/or.png" alt="" />
+            <h3>Or</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </table>
+          </div>
+
+          <div class="back">
+            A operação "OR" retorna verdadeiro se pelo menos uma das condições
+            for verdadeira. O resultado só será falso se todas as condições
+            forem falsas.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/not.png" alt="" />
+            <h3>Not</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </div>
+          <div class="back">
+            A operação "NOT" inverte o valor lógico de uma condição. Se a
+            condição for verdadeira, "NOT" a tornará falsa, e vice-versa.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/and.png" alt="" />
+            <h3>And</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </table>
+          </div>
+
+          <div class="back">
+            A operação "AND" retorna verdadeiro apenas se todas as condições
+            forem verdadeiras. Se pelo menos uma condição for falsa, o resultado
+            será falso.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/nor.png" alt="" />
+            <h3>Nor</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+            </table>
+          </div>
+          <div class="back">
+            A porta NOR (Negação do OU) produz 1 se todas as entradas forem 0.
+            Ela produz 0 se qualquer entrada for 1.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/buffer.png" alt="" />
+            <h3>Buffer</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="back">
+            A porta Buffer simplesmente repassa sua entrada, inalterada, para
+            sua saída.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/nand.png" alt="" />
+            <h3>Nand</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+            </table>
+          </div>
+
+          <div class="back">
+            A porta NAND (Negação do E) produz 1 se qualquer uma de suas
+            entradas for 0. Ela produz 0 apenas se todas as entradas forem 1.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/xnor.png" alt="" />
+            <h3>Xnor</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </table>
+          </div>
+          <div class="back">
+            A porta XNOR (OU Exclusivo Negado) produz 1 se todas as entradas
+            forem iguais (todas 1 ou todas 0). Ela produz 0 se as entradas forem
+            diferentes. É o oposto da XOR.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="front">
+            <img src="../img/xor.png" alt="" />
+            <h3>Xor</h3>
+            <table>
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>X</td>
+              </tr>
+
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+            </table>
+          </div>
+          <div class="back">
+            A porta XOR (OU Exclusivo) produz 1 se suas entradas forem
+            diferentes. Ela produz 0 se as entradas forem iguais.
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="../js/script.js"></script>
+</html>
